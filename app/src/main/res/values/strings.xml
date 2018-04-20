@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">企航课程</string>
+
+    <string name="news">新闻</string>
+    <string name="CourseRegistration">课程报名</string>
+    <string name="friends">朋友圈</string>
+    <string name="PersonalCenter">个人中心</string>
+</resources>

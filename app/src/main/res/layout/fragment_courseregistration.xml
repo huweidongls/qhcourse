@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EFEFEF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:background="@color/top_bg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:text="@string/CourseRegistration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="1px"
+            android:background="#B48541"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:id="@+id/fragment_regist_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:id="@+id/fragment_regist_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <com.haibin.calendarview.CalendarView
+            android:layout_marginTop="1px"
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            app:month_view="com.a99zan.qhcourse.view.QMonthView"
+            app:week_view="com.a99zan.qhcourse.view.QWeekView"
+            app:calendar_height="50dp"
+            app:current_month_text_color="#333333"
+            app:current_month_lunar_text_color="#CFCFCF"
+            app:min_year="2004"
+            app:other_month_text_color="#e1e1e1"
+            app:scheme_text="假"
+            app:scheme_text_color="#333"
+            app:scheme_theme_color="#333"
+            app:selected_text_color="#fff"
+            app:selected_theme_color="#333"
+            app:week_background="#B48541"
+            app:month_view_show_mode="mode_only_current"
+            app:week_text_color="#fff" />
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fragment_regist_course_num"
+                android:padding="8dp"
+                android:textSize="20sp"
+                android:text="本月有0条 相关课程"
+                android:textColor="#222222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ListView
+                android:layout_below="@+id/fragment_regist_course_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+
+        </RelativeLayout>
+
+</LinearLayout>
